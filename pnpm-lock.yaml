@@ -18,8 +18,8 @@ importers:
         specifier: ^0.0.3
         version: 0.0.3(zod@4.4.3)
       '@kdtlabs/utils':
-        specifier: ^0.0.15
-        version: 0.0.15(zod@4.4.3)
+        specifier: ^0.0.16
+        version: 0.0.16(zod@4.4.3)
       better-sqlite3:
         specifier: ^12.9.0
         version: 12.9.0
@@ -792,8 +792,8 @@ packages:
       zod:
         optional: true
 
-  '@kdtlabs/utils@0.0.15':
-    resolution: {integrity: sha512-PlD0EbXpGmH1t/vi1OoEO38VSrJ9F9Rb+TmgY73qvLnO7P7wZLTtyatd80LzcI10AvBR+VCj4mWOLyxzC0/iiA==}
+  '@kdtlabs/utils@0.0.16':
+    resolution: {integrity: sha512-0r8W/Zbciv343L/V0D3g6CRQXLADkZ4DDOAIuVvVAZu8Lc9I7zHf7Sovrr2tKtLgZOH1qb/+2CgbtgBzAxaNTg==}
     peerDependencies:
       zod: ^4.3.6
     peerDependenciesMeta:
@@ -3925,7 +3925,7 @@ snapshots:
     optionalDependencies:
       zod: 4.4.3
 
-  '@kdtlabs/utils@0.0.15(zod@4.4.3)':
+  '@kdtlabs/utils@0.0.16(zod@4.4.3)':
     optionalDependencies:
       zod: 4.4.3
 
