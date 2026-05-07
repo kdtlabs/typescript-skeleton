@@ -1,0 +1,107 @@
+# ---- Node ----
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional caches
+.npm
+.eslintcache
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
+
+# pnpm
+.pnpm-store
+
+# ---- macOS ----
+.DS_Store
+._*
+
+# ---- Linux ----
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+nohup.out
+
+# ---- Visual Studio Code ----
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!*.code-workspace
+*.vsix
+
+# ---- JetBrains (IntelliJ / WebStorm / PhpStorm / ...) ----
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/contentModel.xml
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/mongoSettings.xml
+.idea/**/httpRequests
+.idea/**/copilot.data.migration.*.xml
+.idea/replstate.xml
+.idea/sonarlint/
+.idea/sonarlint.xml
+.idea/caches/build_file_checksums.ser
+.idea/.cache/.Apifox_Helper
+.idea/ApifoxUploaderProjectSetting.xml
+*.iws
+*.iml
+*.ipr
+out/
+.idea_modules/
+cmake-build-*/
+atlassian-ide-plugin.xml
+http-client.private.env.json
+
+# ---- Project: runtime artifacts ----
+storage
+
+# ---- Local tool config ----
+.agents/
+.claude/
+.nex/

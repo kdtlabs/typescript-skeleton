@@ -1,0 +1,9 @@
+allowBuilds:
+    "@kdtlabs/eslint-config": false
+    "@kdtlabs/logger": false
+    "@kdtlabs/utils": false
+    "@swc/core": true
+    better-sqlite3: true
+    esbuild: true
+    simple-git-hooks: true
+    unrs-resolver: true
