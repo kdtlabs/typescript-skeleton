@@ -133,9 +133,16 @@ export async function initServer(routes: Record<string, Hono> = {}) {
     })
 
     addExitHandler(async () => {
-        await promisify(server.close.bind(server))().then(
-            () => logger.info('Stopped server!'),
-            (error) => logger.error('Failed to stop server', error),
-        )
+        const promise = promisify(server.close.bind(server))().catch((error) => logger.error('Failed to stop server', error))
+
+        if ('closeIdleConnections' in server) {
+            server.closeIdleConnections()
+        }
+
+        if ('closeAllConnections' in server) {
+            server.closeAllConnections()
+        }
+
+        await promise.then(() => logger.info('Server stopped!'))
     })
 }
